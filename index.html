@@ -4,6 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="css\style.css" />
+    <style>
+      .artikel {
+        background-color: aquamarine;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1 style="background-color: aliceblue">Ini Kiri</h1>
+      <h1 style="background-color: aliceblue">Ini Kanan</h1>
+    </header>
+    <section>
+      <header>
+        <h2>Ini Konten</h2>
+      </header>
+      <p>Ini konten</p>
+      <article class="artikel">
+        <header>
+          <h2>Ini titles</h2>
+        </header>
+        <p>Ini Konten</p>
+      </article>
+    </section>
+    <button onclick="turnOn()" style="background-color: blue">Saklar On</button>
+    <button onclick="turnOff()" style="background-color: chartreuse">
+      Saklar Off
+    </button>
+    <script>
+      function turnOn() {
+        alert("Lampu berhasil manyala");
+      }
+      function turnOff() {
+        alert("Lampu berhasil dimatikan");
+      }
+    </script>
+  </body>
 </html>
